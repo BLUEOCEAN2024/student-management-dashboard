@@ -1,26 +1,21 @@
 import React from 'react';
 
-function StudentList({ students }) {
+export default function StudentList({ students }) {
   return (
     <table>
       <thead>
         <tr>
-          <th>Name</th><th>Email</th><th>Actions</th>
+          <th>Name</th><th>Email</th>
         </tr>
       </thead>
       <tbody>
-        {students.map(stu => (
-          <tr key={stu.id}>
-            <td>{stu.name}</td>
-            <td>{stu.email}</td>
-            <td>
-              <button>Edit</button>
-              <button>Delete</button>
-            </td>
+        {students.map(student => (
+          <tr key={student.id}>
+            <td>{student.name}</td>
+            <td>{student.email}</td>
           </tr>
         ))}
       </tbody>
     </table>
   );
 }
-export default StudentList;
