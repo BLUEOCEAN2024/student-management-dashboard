@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Tag(name = "Student Management", description = "APIs for managing students")
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api/students")
 public class StudentController {

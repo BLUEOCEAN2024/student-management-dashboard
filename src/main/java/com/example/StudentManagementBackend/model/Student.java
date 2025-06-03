@@ -4,12 +4,12 @@ package com.example.StudentManagementBackend.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+// import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "students")
 @Data
-@NoArgsConstructor
+// @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
     @Id
